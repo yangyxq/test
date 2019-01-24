@@ -10,10 +10,12 @@
 
 如果你想要一个快速的方法来创建子Rmd文档的块：
 
-rmd <- list.files(pattern = '*.Rmd', recursive = T, include.dirs = T) chunks <- paste0("{r child = '", rmd, "'}\n\n") cat(chunks, sep = '\n')
+#rmd <- list.files(pattern = '*.Rmd', recursive = T, include.dirs = T) 
+#chunks <- paste0("{r child = '", rmd, "'}\n\n") 
+#cat(chunks, sep = '\n')
 
-```{r child = 'carstest1.Rmd'}
-```
+#```{r child = 'carstest1.Rmd'}
+#```
 
-```{r child = 'carstest2.Rmd'}
-```
+#```{r child = 'carstest2.Rmd'}
+#```
