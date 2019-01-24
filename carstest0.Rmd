@@ -7,10 +7,15 @@ output: word_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r child = 'carstest1.Rmd'}
+```{r}
+#调用当前路径R函数
+source("btest.R")
+```
+
+```{r child = 'file1/carstest1.Rmd'}
 
 ```
 
-```{r child = 'carstest2.Rmd'}
+```{r child = 'file2/carstest2.Rmd'}
 
 ```
