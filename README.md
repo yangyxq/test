@@ -1,4 +1,8 @@
 # test
+<<<<<<< HEAD
+=======
+
+>>>>>>> 37d13845bcd7faf81c5ec5976a7523fdc45b87c0
 如何将两个RMarkdown(.Rmd)文件合并成一个输出？
 
 可按不同功能或任务分别建立Rmd文件，比如，有三个Rmd文件在同一个文件夹：carstest0.Rmd, carstest1.Rmd, carstest2.Rmd。
@@ -9,6 +13,7 @@
 
 如果你想要一个快速的方法来创建子Rmd文档的块：
 
+<<<<<<< HEAD
 rmd <- list.files(pattern = '*.Rmd', recursive = T, include.dirs = T)
 chunks <- paste0("```{r child = '", rmd, "'}\n```\n")
 cat(chunks, sep = '\n')
@@ -17,3 +22,14 @@ cat(chunks, sep = '\n')
 #
 # ```{r child = 'carstest2.Rmd'}
 # ```
+=======
+#rmd <- list.files(pattern = '*.Rmd', recursive = T, include.dirs = T) 
+#chunks <- paste0("{r child = '", rmd, "'}\n\n") 
+#cat(chunks, sep = '\n')
+
+#```{r child = 'carstest1.Rmd'}
+#```
+
+#```{r child = 'carstest2.Rmd'}
+#```
+>>>>>>> 37d13845bcd7faf81c5ec5976a7523fdc45b87c0
