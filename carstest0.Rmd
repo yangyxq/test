@@ -1,0 +1,16 @@
+---
+title: "testrender"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r child = 'carstest1.Rmd'}
+
+```
+
+```{r child = 'carstest2.Rmd'}
+
+```
